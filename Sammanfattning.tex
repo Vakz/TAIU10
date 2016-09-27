@@ -85,6 +85,9 @@ $|z_1 + z_2| \leq |z_1| + z_2|$ \\
 För att underlätta division av komplexa tal, kan man förlänga med nämnarens konjugat:\\
 $\dfrac{z_1}{z_2} = \dfrac{z_1\bar{z_2}}{z_2\bar{z_2}} = \dfrac{z_1\bar{z_2}}{|z_2|^2}$ \\
 Detta gör att nämnaren blir reell.
+\subsubsection{Ekvationer}
+En komplex ekvation av udda grad med endast reella koefficienter, så som $z^3 - 4z^2 + 9z - 10 = 0$, måste ha minst en reell rot, då komplexa rötter kommer i par om $z$ och $\bar{z}$.\\
+På tentor är rötter vanligen heltal. Genom detta kan en rot oftast hittas genom att testa med faktorerna av konstanten. För ekvationen ovan är faktorerna \{-1, 1, -2, 2, -5, 5, -10 och 10\}, varav 2 är en rot till ekvationen.
 \end{doublespace}
 \subsection{Funktioner}
 \subsubsection{Definitions-och värdemängd, invers}
@@ -100,7 +103,7 @@ En funktion är begränsad ifall alla $y \in V_f$ är mindre eller större än n
 \section{Naturliga logaritmen, exponential- och potensfunktioner}
 $ln$ har definitionsmängden $D_{ln} = ]0,\infty[ och V_{ln} = \mathbb{R}$
 \subsubsection{Räkneregler}
-\begin{doublespace}
+\begin{spacing}{2.2}
 $\ln(xy) = \ln x + \ln y$\\
 $\ln(1) = 0$\\
 $\ln(\dfrac{x}{y}) = \ln(x) - \ln(y)$ \\
@@ -112,7 +115,7 @@ $\ln x$ = $\left\{
       A_x$ för $x \geq 1 \\
       -A_x$ för $0 < x < 1 \\
     \end{array}\right.$\\[10pt]
-\end{doublespace}
+\end{spacing}
 \subsection{Exponentialekvationer och talet e}
 \begin{doublespace}
 $\ln^{-1}$ kallas den naturliga exponentialekvationen.\\
@@ -140,14 +143,22 @@ opacity=.4](B,A,O)
 \tkzLabelAngle[pos = 0.6](B,A,O){$v$}
 \end{tikzpicture}\\
 \begin{doublespace}
-$cos v = \dfrac{b}{c}$\\
-$sin v = \dfrac{a}{c}$\\
-$tan v = \dfrac{a}{b}$\\
-$cot v = \dfrac{b}{a}$\\
+\begin{minipage}[t]{0.25\textwidth}
+$\cos v = \dfrac{b}{c}$\\
+\end{minipage}
+\begin{minipage}[t]{0.25\textwidth}
+$\sin v = \dfrac{a}{c}$\\
+\end{minipage}
+\begin{minipage}[t]{0.25\textwidth}
+$\tan v = \dfrac{a}{b}$\\
+\end{minipage}
+\begin{minipage}[t]{0.25\textwidth}
+$\cot v = \dfrac{b}{a}$\\
+\end{minipage}
 \end{doublespace}
 \subsubsection{Värden för vanliga vinklar}
 \begin{tabular}{c|c|c|c|c}
-v & cos v & sin v & tan v & cot v \\
+$v$ & $\cos v$ & $\sin v$ & $\tan v$ & $\cot v$ \\
 \hline
 $\dfrac{\pi}{6}$ & $\dfrac{\sqrt{3}}{2}$ & $\dfrac{1}{2}$ & $\dfrac{1}{\sqrt{3}}$  & $\sqrt{3}$\\
 \hline
@@ -159,7 +170,7 @@ $\dfrac{\pi}{3}$ & $\dfrac{1}{2}$ & $\dfrac{\sqrt{3}}{2}$ & $\sqrt{3}$ & $\dfrac
 \begin{doublespace}
 \begin{minipage}[t]{0.5\textwidth}
 $\cos^2 v + \sin^2 v = 1\\
-\cos -v = cos v\\
+\cos -v = \cos v\\
 \sin -v = -\sin v\\
 \tan -v = -\tan v\\
 \cot -v = -\tan v\\
@@ -197,6 +208,19 @@ $\cos u + \cos v = 2\cos \dfrac{u+v}{2} \cos \dfrac{u-v}{2}$\\
 $\cos u - \cos v = -2\sin \dfrac{u+v}{2} \sin \dfrac{u-v}{2}$\\
 $\sin u + \sin v = 2\sin \dfrac{u+v}{2} \cos \dfrac{u-v}{2}$\\
 $\sin u - \sin v = 2\cos \dfrac{u+v}{2} \sin \dfrac{u-v}{2}$\\
+\subsection{Arcus-funktioner}
+\begin{minipage}[t]{0.5\textwidth}
+$D_{\arcsin} = D_{arccos} = [-1,1]$\\
+$V_{\arcsin} = [-\dfrac{\pi}{2}, \dfrac{\pi}{2}]$\\
+$V_{\arccos} = [0, \pi]$\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+$D_{arctan} = D_{arccot} = \mathbb{R}$\\
+$V_{arctan} = ]-\dfrac{\pi}{2}, \dfrac{\pi}{2}[$\\
+$V_{arccot} = ]0,\pi[$\\
+\end{minipage}
+Exempelanvänding: $\sin v = x \Leftrightarrow \arcsin x = v$. Samma samband gäller för samtliga arcus-funktioner.\\
+Kan användas som svar då v inte är någon standardvinkel, exempelvis $\sin v = \dfrac{\sqrt{7}}{5} \Leftrightarrow \arcsin (\dfrac{\sqrt{7}}{5}) + 2\pi n \lor \pi -  \arcsin(\dfrac{\sqrt{7}}{5}) + 2\pi n$
 \end{doublespace}
 \subsection{Den komplexa exponentialfunktionen}
 \begin{doublespace}
@@ -219,5 +243,31 @@ $z = r(\cos v + i \sin v) = re^{iv}$\\
 $e^z = e^{x + iy} = e^xe^{iy} = e^x(\cos y + i\sin y)$\\
 $r = |z| = \sqrt{x^2 + y^2}$\\
 \textbf{de Moivres formel}: $z^p = r^pe^{ipv} = r^p(\cos pv + i\sin pv)$
+\end{doublespace}
+\section{Gränsvärden}
+\subsection{Räkneregler}
+\begin{doublespace}
+$f(x) \rightarrow A \wedge g(x) \rightarrow B\\
+\indent \Rightarrow f(x) + g(x) \rightarrow A + B\\
+\indent \Rightarrow f(x)\cdot g(x) \rightarrow A\cdot B\\
+\indent \Rightarrow \dfrac{f(x)}{g(x)} \Rightarrow \dfrac{A}{B}$ om $B\ne 0$\\
+\subsection{Vanliga lösningsmetoder}
+\subsubsection{Uttryck med rötter}
+Ett yttryck med subtraktion eller addition mellan rötter löses lättast genom förläning av konjugatet, så att:\\
+$\lim\limits_{x\rightarrow a} \sqrt{x} - \sqrt{y} = \lim\limits_{x\rightarrow a} \dfrac{(\sqrt{x} - \sqrt{y})(\sqrt{x} + \sqrt{y})}{\sqrt{x} + \sqrt{y}} = \lim\limits_{x\rightarrow a} \dfrac{x - y}{\sqrt{x} + \sqrt{y}}$
+\subsubsection{Uttrycket upphöjt till $e^{ln}$}
+För uttryck som inte enkelt kan förenklas, kan uttryck upphöjas till $e^{ln}$, exempelvis $\dfrac{x^{\alpha}}{a^{x}}$ = $e^{\ln({\dfrac{x^{\alpha}}{a^{x}}})}$. Detta gör att logaritm-lagarna kan appliceras, vilket kan underlätta i vissa situationer.\\
+\subsection{Standardgränsvärden}
+\begin{minipage}[t]{0.5\textwidth}
+$\lim\limits_{x\rightarrow \infty}\dfrac{\ln{x}}{x} = 0,$ då $ \alpha > 0$\\
+$\lim\limits_{x\rightarrow \infty}\dfrac{x^{\alpha}}{a^{x}} = 0, $ då $ a > 1$\\
+$\lim\limits_{x\rightarrow 0}\dfrac{\ln{(1+x)}}{x} = 1$\\
+$\lim\limits_{x\rightarrow 0}\dfrac{\sin x}{x} = 1$\\
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+$\lim\limits_{x\rightarrow 0} (1+x)^{\dfrac{1}{x}} = e$\\
+$\lim\limits_{x\rightarrow 0} \dfrac{e^{x}- 1}{x} = 1$\\
+$\lim\limits_{x\rightarrow 0^{+}} x^{\alpha}\ln{x} = 0$\\
+\end{minipage}
 \end{doublespace}
 \end{document}
